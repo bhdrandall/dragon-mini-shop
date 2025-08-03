@@ -1,0 +1,170 @@
+Benjamin Randall CV - 2024
+Benjamin Caldric Randall
+bhdrandall@gmail.com - 07761866603
+50 Rhydhelig Avenue, Cardiff, CF14 4DE
+ 
+ 
+PERSONAL STATEMENT 
+As an incredibly curious and inquisitive person that is always looking for a creative way to solve puzzles, programming came naturally to me at a very young age through sheer determination and learning from old books. I have always had a passion to learn as much as I can about anything technical, be it mechanisms, algorithms or chess openings. Any kind of puzzle is just another challenge for me to solve.[a] Once I’ve started a project I very quickly become immersed and determined to see it finished.
+
+
+Skills
+
+
+6 Years industry experience:
+* C# .Net (Webforms, MVC Framework, .Net Core 8, Razor pages, Blazor)
+* CMS frameworks (Umbraco 7/8/9/10/11/12/13)
+* ES6 Javascript / Typescript
+* React / Redux / RTK toolkit
+* LESS / SCSS preprocessors
+* Gulp / Webpack / Parcel build pipelines
+* Agile / Scrum methodologies
+* Azure Devops build / release pipelines
+* Azure Portal resource management (load balancing, auto scale-out, Bicep templates)
+* AWS Portal resource management (lambdas, Elastic Beanstalks)
+* SQL and database management (SSMS / Azure)
+* Experience working as part of a tight dev team
+* Experience leading and organising a dev team (Azure devops sprint boards)
+* Effective communicator, comfortable speaking in front of groups
+* Experience mentoring and training other staff
+* Experience with graphic/logo/banner creation using Photoshop.
+
+
+Work Experience
+
+
+Senior Software Engineer - April 1, 2025 - Present
+Smartimpact - https://smartimpact.co.uk/
+London (Remote)
+
+
+Responsibilities:
+• Developing and maintaining enterprise-level Umbraco CMS solutions for membership organizations, professional bodies, and non-profits
+• Implementing and customizing the SI framework to create tailored digital experiences for clients in regulated sectors
+• Leading the development of member portals, learning management systems, and event platforms
+• Integrating Umbraco solutions with Dynamics 365 and other business systems
+• Providing technical leadership on digital transformation projects for professional associations
+• Developing accessible, responsive interfaces that meet WCAG standards for diverse user groups
+• Mentoring junior developers and establishing best practices for secure, maintainable code
+
+
+Full Stack Developer - October 12, 2023 - July 31, 2024
+I3Digital - https://i3digital.com
+Belfast
+
+
+Responsibilities:
+When I started at I3Digital they were primarily using Kentico as their CMS of choice, however they wanted to move towards using Umbraco CMS instead. My role was to build a base template system with the latest LTS Umbraco version and act as the main point of knowledge on Umbraco for the projects going forward. This allowed me to have a lot of input into how the best practices should be implemented and how the system was to be architected. I worked on setting up all layers of the project, MSSQL Database, Dotnet 8 - Umbraco 13 webapps, Razor/Twig frontend templates. I also worked on CI/CD Azure Devops pipelines and supporting tooling including Gulp build tools for this as well. The Umbraco System I built is currently used for the I3Digital Site.
+
+
+Full Stack Developer - November 28, 2022 - September 21, 2023
+Selazar - https://selazar.com
+Belfast
+
+
+Responsibilities:
+Working at Selazar has allowed me to experience working on a very large scale product. This includes working with a product team and a QA team to produce and refine new features for the large scale system. This was a good learning experience in comparison to working at Method4 where I was the one who created the projects from scratch instead of learning and maintaining an already large mature existing system. I was primarily working on the new react frontend being implemented for the portal front. Updating the old react code into new, following the designs of the designer with adobe XD.
+
+
+
+
+Full Stack Analyst Software Developer – August 2018 - October 2022
+Method4 - www.method4.co.uk
+Cardiff
+
+
+Responsibilities:
+During my time at Method4 I have worked on a wide variety of systems and projects.
+Many of these being internal Welsh Government systems like DEWi (Data Exchange Wales Initiative), requiring government SC security vetting clearance, which I obtained.
+
+
+My primary project throughout my time at Method4 has been a public facing website for the WJEC that myself and a few others built from scratch (https://www.wjec.co.uk/).
+Through this project I’ve learnt many skills including: Umbraco CMS, ReactJS, Razor pages, Less/Scss, gulp / webpack build pipelines, Azure Devops build / release pipelines, Azure portal resource management (including managing load balancing and auto scale-out functionality for app services as well as Azure App slots for live deployments), Sql server management through Azure and SSMS, and also how to manage clients and requests for change / support.
+
+
+This project and a few others have given me exposure to a full life cycle of a project. From design to live release to requests for new features post release. 
+
+
+Most of the projects I’ve worked on at Method4 were run using the SCRUM Agile methodology with 
+close communication with the client on their requirements (often using UX design tools like Figma, 
+Adobe XD, and InVision).
+        
+Training: 
+I have also attended training sessions (and obtained certifications), provided by the company, including:
+Umbraco: Fundamentals / MVC with Umbraco[b].
+Microsoft Azure portal training.
+Microsoft SCRUM Developer training.
+ 
+IT Support – June 2015 - September 2015
+Isle of Man Government (GTS) - www.gov.im/
+Isle of Man
+
+
+Responsibilities:
+Setting up individual work phones with security software for employees
+Level 1 IT support
+Answering the helpdesk phone and recording a new job to the list
+On site system and network maintenance
+
+
+I learnt a lot during my time at GTS including how office environments work, how my previous knowledge of IT systems from college applies to a real scenario. Also interacting with the customer and finding out exactly what the issue is and what is the best way to solve the issue, this helped develop my ability to clearly define and creatively solve problems.
+ 
+Bar Staff – October  2014 - June 2017
+Heron and Brearley - www.hb.im/
+Isle of man
+Responsibilities:
+Managing a bar in a customer facing position.
+Late night shift work when needed.
+Food service and waiting tables during day shifts.
+
+
+During my time at this job I developed my social skills greatly and learned to not only comfortably interact with customers in a professional manner but also work as a team and interact with co-workers in an efficient way.
+
+
+EDUCATION
+                    
+BSc (Hons) 2:1, Computer Science - September 2015 - June 2018.
+University of Aberystwyth
+
+
+Through my computer science course at Aberystwyth university I learnt a wide variety of skills from the many modules I took. Including: 
+Multiple software development methodologies (experience using agile development), AI and machine learning, Space robotics, Web development with Ruby on Rails using MVC, Database design and creation, C / C++, Java (Spring/Hibernate/Java8), and robotics and embedded systems using an arduino. 
+During my time at university I have learned a great deal, not only about the technical aspects of computing but also about communication in a group and how to organise time efficiently.
+
+
+BTEC, June 2012 – June 2015
+Isle of Man College,
+Douglas, Isle of Man
+
+
+English GCSE: A
+Level II BTEC in IT. Distinction*, included:
+Spreadsheets, Database, Software, Hardware, Computer Systems, Web design
+
+
+Level 3 BTEC in IT. 3x Distinction*, included:
+Spreadsheets, Database, Software, Event driven programming, Computer Systems, Web design, Networking,  Graphics, Animation, IT Business, IT Support, Systems troubleshooting and repair
+
+
+Winner of award for level 3 BTEC in IT for highest marks in the college for subject.
+ 
+GCSE’s, June 2007 – June 2012
+QEII High School,
+Peel, Isle of Man
+Maths: B - Science: B - Additional Science: B[c]
+
+
+PERSONAL INTERESTS
+I have an inquisitive nature and like to find out about many things for example Chess, lock-picking, martial arts, music, history and anything i’m currently obsessed with.  I read to pursue my interests and have a wide range of books on the go at any one time. Genres include: Horror, Fantasy, Martial Arts, Strategy, History, Philosophy, Mycology and Computing.
+I have also played guitar for about 15 years and spend a lot of my time practising or learning new songs. I play both electric and acoustic, both in a wide variety of genres.
+I have always been interested in programming ever since I was young and learnt C at a very young age with my Dad. In my spare time I will sometimes write new code projects for creative ideas I have with my friends.[d][e]
+I am also an avid chess player and have played since i was a child, I regularly play competitively online and follow the competitive scene.
+
+
+REFERENCES
+Please don’t hesitate to contact me for references from previous employers.
+[a]I like passion, but always think "proof?" when I read stuff like that
+[b]Umbraco certified professional or whatever it is here
+[c]I would still include all this, but i might format it so it takes up fewer lines as this is the least important part of your cv but taking up a lot of space
+[d]examples are good :)
+[e]+1 (this is where having a github for evidence is nice)
