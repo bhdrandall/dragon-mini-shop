@@ -1,10 +1,34 @@
 [build]
-  command = "next build"
-  publish = "out"
+  command = "npm run build"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
+  NEXT_TELEMETRY_DISABLED = "1"
 
 [dev]
   command = "npm run dev"
   port = 3000
+  publish = "public"
+  targetPort = 3000
+  framework = "next"
+
+[context.production]
+  command = "npm run build"
+  publish = ".next"
+  environment = { NEXT_TELEMETRY_DISABLED = "1" }
+
+[context.deploy-preview]
+  command = "npm run build"
+  publish = ".next"
+  environment = { NEXT_TELEMETRY_DISABLED = "1" }
+
+[context.branch-deploy]
+  command = "npm run build"
+  publish = ".next"
+  environment = { NEXT_TELEMETRY_DISABLED = "1" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

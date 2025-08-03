@@ -158,33 +158,9 @@ export default function About() {
           </div>
         </div>
       </section>
-                        <span className="text-primary font-medium">Expert</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: '95%' }}></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between text-sm text-foreground/80 mb-1">
-                        <span>TypeScript/JavaScript (ES6+)</span>
-                        <span className="text-primary font-medium">Expert</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary h-2 rounded-full" style={{ width: '90%' }}></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div className="flex justify-between text-sm text-foreground/80 mb-1">
-                        <span>SQL (T-SQL, NoSQL)</span>
-                        <span className="text-primary font-medium">Advanced</span>
-                      </div>
-                      <div className="w-full bg-muted rounded-full h-2">
-                        <div className="bg-primary/80 h-2 rounded-full" style={{ width: '85%' }}></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
+    </div>
+  );
+}
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-3">Frameworks & Libraries</h3>
                   <div className="flex flex-wrap gap-2">
