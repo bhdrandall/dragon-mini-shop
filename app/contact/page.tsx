@@ -1,53 +1,193 @@
-import Link from 'next/link';
 import { Montserrat } from "next/font/google";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaDiscord, FaInstagram, FaTwitter } from "react-icons/fa";
+
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
 export default function Contact() {
   return (
-    <section className="w-full bg-background text-foreground px-4 py-16">
-      <div className="max-w-4xl mx-auto">
-        {/* Header Section */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
-          <div className="md:w-1/3 flex flex-col items-center md:items-end text-center md:text-right">
-            <div className="w-40 h-40 rounded-full bg-gradient-to-r from-primary to-primary/80 flex items-center justify-center mb-6">
-              <svg width="80" height="80" viewBox="0 0 24 24" fill="none" className="text-primary-foreground">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
-              </svg>
-            </div>
-            <h1 className={`${montserrat.className} text-4xl font-bold bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent`}>
-              Get In Touch
-            </h1>
-            <p className="text-primary font-medium mt-2">Let&apos;s work together</p>
-          </div>
-          
-          <div className="md:w-2/3 space-y-6">
-            <p className="text-foreground/80 text-lg leading-relaxed">
-              <p className="text-foreground/70">I&apos;m always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p> 
-              Feel free to reach out through any of the following channels.
-            </p>
-            
-            <div className="space-y-4">
-              <div className="bg-card p-6 rounded-xl shadow-sm border border-border">
-                <h2 className="text-xl font-bold text-foreground mb-4">Contact Information</h2>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent flex items-center justify-center text-primary">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="text-sm font-medium text-foreground/70">Email</h3>
-                      <a href="mailto:bhdrandall@gmail.com" className="text-primary hover:underline">bhdrandall@gmail.com</a>
-                    </div>
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className={`${montserrat.className} text-4xl md:text-5xl font-bold mb-6`}>
+            Contact Us
+          </h1>
+          <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
+            Have questions about our miniatures or need assistance with an order? We're here to help!
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="py-16 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Contact Form */}
+            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+              <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
+              <form className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">First Name</label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-white"
+                      placeholder="Your first name"
+                    />
                   </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent flex items-center justify-center text-primary">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
+                  <div>
+                    <label htmlFor="last-name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Last Name</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-white"
+                      placeholder="Your last name"
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-white"
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                  <select
+                    id="subject"
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-white"
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="order">Order Inquiry</option>
+                    <option value="custom">Custom Order</option>
+                    <option value="wholesale">Wholesale Inquiry</option>
+                    <option value="support">Customer Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Message</label>
+                  <textarea
+                    id="message"
+                    rows={5}
+                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 dark:bg-gray-700 dark:text-white"
+                    placeholder="How can we help you?"
+                  ></textarea>
+                </div>
+                
+                <button
+                  type="submit"
+                  className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+            
+            {/* Contact Information */}
+            <div>
+              <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-8">
+                Have questions about our products or need assistance with an order? Our friendly team is here to help you with anything you need.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+                    <FaEnvelope className="w-5 h-5" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">Email</h3>
+                    <a href="mailto:contact@dragonminiatures.com" className="text-base font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+                      contact@dragonminiatures.com
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+                    <FaPhone className="w-5 h-5" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">Phone</h3>
+                    <a href="tel:+18005551234" className="text-base font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+                      +1 (800) 555-1234
+                    </a>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Mon-Fri, 9am-5pm EST</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400">
+                    <FaMapMarkerAlt className="w-5 h-5" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">Location</h3>
+                    <p className="text-base font-medium text-gray-900 dark:text-white">
+                      123 Miniature Lane<br />
+                      Tabletop City, TC 12345<br />
+                      United States
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-10">
+                <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">Follow Us</h3>
+                <div className="flex space-x-4">
+                  <a href="#" className="text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400">
+                    <span className="sr-only">Instagram</span>
+                    <FaInstagram className="h-6 w-6" />
+                  </a>
+                  <a href="#" className="text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400">
+                    <span className="sr-only">Twitter</span>
+                    <FaTwitter className="h-6 w-6" />
+                  </a>
+                  <a href="#" className="text-gray-500 hover:text-indigo-600 dark:hover:text-indigo-400">
+                    <span className="sr-only">Discord</span>
+                    <FaDiscord className="h-6 w-6" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Map Section */}
+      <section className="bg-gray-100 dark:bg-gray-800 py-16">
+        <div className="container mx-auto px-4">
+          <div className="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg">
+            <div className="aspect-w-16 aspect-h-9 w-full h-96 bg-gray-200 dark:bg-gray-600 flex items-center justify-center">
+              <p className="text-gray-500 dark:text-gray-400">Interactive Map Placeholder</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* FAQ CTA */}
+      <section className="py-16 bg-indigo-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-bold mb-4">Looking for quick answers?</h2>
+          <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+            Check out our FAQ section for answers to common questions about our products, shipping, and more.
+          </p>
+          <a 
+            href="/faq" 
+            className="inline-block px-8 py-3 bg-white text-indigo-700 font-bold rounded-lg hover:bg-gray-100 transition-colors duration-200"
+          >
+            Visit FAQ
+          </a>
+        </div>
+      </section>
+    </div>
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-semibold text-foreground">Let&apos;s Connect</h3>
