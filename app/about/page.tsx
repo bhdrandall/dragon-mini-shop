@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Montserrat } from "next/font/google";
-import Image from 'next/image';
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
@@ -36,7 +35,7 @@ export default function About() {
                     At Dragon Miniatures, we believe that the best tabletop adventures are built on imagination, strategy, and most importantly, stunning miniatures that bring your games to life. What started as a passion project in a small home workshop has grown into a dedicated studio where we combine traditional craftsmanship with cutting-edge 3D printing technology.
                   </p>
                   <p>
-                    Our mission is simple: to create the highest quality, most detailed miniatures and terrain that help you tell your stories and create unforgettable gaming experiences. Whether you're a Dungeon Master crafting the perfect encounter, a Warhammer enthusiast expanding your army, or a painter looking for your next masterpiece, we've got something special for you.
+                    Our mission is simple: to create the highest quality, most detailed miniatures and terrain that help you tell your stories and create unforgettable gaming experiences. Whether you&apos;re a Dungeon Master crafting the perfect encounter, a Warhammer enthusiast expanding your army, or a painter looking for your next masterpiece, we&apos;ve got something special for you.
                   </p>
                 </div>
               </div>
@@ -100,7 +99,7 @@ export default function About() {
                 <div className="w-full h-full bg-gray-200 dark:bg-gray-700"></div>
               </div>
               <h3 className="text-xl font-bold">Alex Turner</h3>
-              <p className="text-indigo-600 dark:text-indigo-400 font-medium mb-2">Founder & Lead Designer</p>
+              <p className="text-indigo-600 dark:text-indigo-400 font-medium mb-2">Founder &amp; Lead Designer</p>
               <p className="text-gray-600 dark:text-gray-300">
                 Tabletop gaming enthusiast and 3D printing expert with over a decade of experience in miniature design.
               </p>

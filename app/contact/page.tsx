@@ -13,7 +13,7 @@ export default function Contact() {
             Contact Us
           </h1>
           <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
-            Have questions about our miniatures or need assistance with an order? We're here to help!
+            Have questions about our miniatures or need assistance with an order? We&apos;re here to help!
           </p>
         </div>
       </section>

@@ -46,7 +46,7 @@ const faqs = [
     answer: "Yes! Our team includes talented 3D modelers who can bring your character or concept to life. Additional design fees will apply based on the complexity of the model."
   },
   {
-    question: "What's the maximum size for custom prints?",
+    question: "What&apos;s the maximum size for custom prints?",
     answer: "Our printers can accommodate models up to 200mm x 125mm x 200mm (LxWxH). For larger pieces, we can print in sections that you can assemble."
   },
   {
@@ -62,7 +62,7 @@ export default function CustomOrdersPage() {
       <section className="relative bg-gradient-to-r from-indigo-900 to-purple-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className={`${montserrat.className} text-4xl md:text-5xl font-bold mb-6`}>
-            Custom 3D Printed Miniatures & Terrain
+            Custom 3D Printed Miniatures &amp; Terrain
           </h1>
           <p className="text-xl text-indigo-100 max-w-3xl mx-auto">
             Bring your unique vision to life with our professional 3D printing services for tabletop gaming and collectibles.
@@ -87,12 +87,12 @@ export default function CustomOrdersPage() {
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-2xl font-bold mx-auto mb-4">2</div>
               <h3 className="text-xl font-semibold mb-2">Get a Quote</h3>
-              <p className="text-gray-600 dark:text-gray-300">We'll review your request and provide a free quote within 24 hours.</p>
+              <p className="text-gray-600 dark:text-gray-300">We&apos;ll review your request and provide a free quote within 24 hours.</p>
             </div>
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center text-indigo-600 dark:text-indigo-400 text-2xl font-bold mx-auto mb-4">3</div>
-              <h3 className="text-xl font-semibold mb-2">Print & Ship</h3>
-              <p className="text-gray-600 dark:text-gray-300">Once approved, we'll print and ship your custom order.</p>
+              <h3 className="text-xl font-semibold mb-2">Print &amp; Ship</h3>
+              <p className="text-gray-600 dark:text-gray-300">Once approved, we&apos;ll print and ship your custom order.</p>
             </div>
           </div>
         </div>
@@ -179,22 +179,20 @@ export default function CustomOrdersPage() {
                   ></textarea>
                 </div>
                 
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">File Upload (Optional)</label>
-                  <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 dark:border-gray-600 border-dashed rounded-lg">
-                    <div className="space-y-1 text-center">
-                      <FaUpload className="mx-auto h-12 w-12 text-gray-400" />
-                      <div className="flex text-sm text-gray-600 dark:text-gray-400">
-                        <label className="relative cursor-pointer bg-white dark:bg-gray-800 rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none">
-                          <span>Upload a file</span>
-                          <input id="file-upload" name="file-upload" type="file" className="sr-only" />
-                        </label>
-                        <p className="pl-1">or drag and drop</p>
-                      </div>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">
-                        STL, OBJ, 3MF up to 50MB
-                      </p>
+                <div className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">File Upload (Optional)</div>
+                <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 dark:border-gray-600 border-dashed rounded-lg">
+                  <div className="space-y-1 text-center">
+                    <FaUpload className="mx-auto h-12 w-12 text-gray-400" />
+                    <div className="flex text-sm text-gray-600 dark:text-gray-400">
+                      <label className="relative cursor-pointer bg-white dark:bg-gray-800 rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none">
+                        <span>Upload a file</span>
+                        <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                      </label>
+                      <p className="pl-1">or drag and drop</p>
                     </div>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      STL, OBJ, 3MF up to 50MB
+                    </p>
                   </div>
                 </div>
                 
@@ -235,7 +233,7 @@ export default function CustomOrdersPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
             <p className="text-gray-600 dark:text-gray-300">
-              Have questions? We've got answers about our custom order process.
+              Have questions? We&apos;ve got answers about our custom order process.
             </p>
           </div>
           
@@ -250,7 +248,7 @@ export default function CustomOrdersPage() {
           
           <div className="mt-12 text-center">
             <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Still have questions? We're here to help!
+              Still have questions? We&apos;re here to help!
             </p>
             <a
               href="/contact"
