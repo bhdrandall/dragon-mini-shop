@@ -1,4 +1,5 @@
-import { prisma } from '@/lib/db';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 import { notFound } from 'next/navigation';
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
