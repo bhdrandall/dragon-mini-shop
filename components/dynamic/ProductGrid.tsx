@@ -2,8 +2,8 @@ import React from 'react';
 import { ProductGridData } from '@/lib/component-types';
 import { ProductCard } from './ProductCard';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface ProductGridProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   products: any[];
   title?: string;
   columns?: number;
