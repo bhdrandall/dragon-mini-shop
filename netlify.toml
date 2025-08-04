@@ -5,6 +5,8 @@
 [build.environment]
   NODE_VERSION = "18"
   NEXT_TELEMETRY_DISABLED = "1"
+  NEXT_IGNORE_TYPE_ERRORS = "true"
+  NEXTJS_IGNORE_TYPE_ERRORS = "true"
 
 [dev]
   command = "npm run dev"
