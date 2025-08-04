@@ -2,9 +2,7 @@ import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
 import { ProductGrid } from '@/components/dynamic/ProductGrid';
 
-interface ProductTypePageProps {
-  params: { 'product-type': string };
-}
+
 
 export async function generateStaticParams() {
   // Fetch all unique product types from the database
@@ -12,10 +10,13 @@ export async function generateStaticParams() {
     select: { category: true },
     distinct: ['category'],
   });
-  return types.map((t) => ({ 'product-type': t.category }));
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return types.map((t: any) => ({ 'product-type': t.category }));
 }
 
-export default async function ProductTypePage({ params }: ProductTypePageProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function ProductTypePage(props: any) {
+  const { params } = await props;
   const awaitedParams = await params;
   const { 'product-type': productType } = awaitedParams;
   // Fetch all products for this type
