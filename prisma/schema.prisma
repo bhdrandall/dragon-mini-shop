@@ -1,0 +1,109 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Page model - represents each page on the site
+model Page {
+  id          String      @id @default(cuid())
+  slug        String      @unique // e.g., "home", "about", "shop"
+  title       String
+  description String?
+  isPublished Boolean     @default(true)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  
+  // Page sections/components
+  sections    Section[]
+  
+  @@map("pages")
+}
+
+// Section model - represents a section of a page (like hero, features, etc.)
+model Section {
+  id        String   @id @default(cuid())
+  pageId    String
+  type      String   // "hero", "features", "cta", "content", "gallery", etc.
+  order     Int      // Order of section on the page
+  isVisible Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Relationships
+  page       Page         @relation(fields: [pageId], references: [id], onDelete: Cascade)
+  components Component[]
+  
+  @@map("sections")
+}
+
+// Component model - individual components within sections
+model Component {
+  id        String   @id @default(cuid())
+  sectionId String
+  type      String   // "hero-banner", "feature-card", "cta-button", "text-block", etc.
+  order     Int      // Order within the section
+  isVisible Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  // Component data stored as JSON
+  data      Json     // Flexible data structure for component props
+  
+  // Relationships
+  section   Section  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  
+  @@map("components")
+}
+
+// Product model - for shop items
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  description String?
+  price       Float
+  category    String   // "miniatures", "terrain", "custom"
+  imageUrl    String?
+  isAvailable Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("products")
+}
+
+// Blog post model
+model BlogPost {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  content     String
+  excerpt     String?
+  imageUrl    String?
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  @@map("blog_posts")
+}
+
+// FAQ model
+model FAQ {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String
+  category  String?  // "printing", "orders", "shipping", etc.
+  order     Int      @default(0)
+  isVisible Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@map("faqs")
+}
+
+

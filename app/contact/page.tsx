@@ -105,8 +105,8 @@ export default function Contact() {
                   </div>
                   <div className="ml-4">
                     <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">Email</h3>
-                    <a href="mailto:contact@dragonminiatures.com" className="text-base font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
-                      contact@dragonminiatures.com
+                    <a href="mailto:dragonminishop@gmail.com" className="text-base font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+                      dragonminishop@gmail.com
                     </a>
                   </div>
                 </div>
