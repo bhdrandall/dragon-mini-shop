@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { BreadcrumbData } from '@/lib/component-types';
+import { Container } from './Container';
 
 interface BreadcrumbProps {
   data: BreadcrumbData;
@@ -9,7 +10,7 @@ interface BreadcrumbProps {
 export function Breadcrumb({ data }: BreadcrumbProps) {
   return (
     <nav className="py-4">
-      <div className="container mx-auto px-4">
+      <Container maxWidth="6xl">
         <ol className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
           {data.items.map((item, index) => (
             <li key={index} className="flex items-center">
@@ -31,7 +32,7 @@ export function Breadcrumb({ data }: BreadcrumbProps) {
             </li>
           ))}
         </ol>
-      </div>
+      </Container>
     </nav>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Montserrat } from "next/font/google";
 import { HeroBannerData, ButtonData } from '@/lib/component-types';
+import { Container } from './Container';
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
@@ -61,7 +62,7 @@ export function HeroBanner({ data }: HeroBannerProps) {
       className="relative text-white py-20"
       style={getBackgroundStyle()}
     >
-      <div className={`container mx-auto px-4 ${textAlignClass[data.textAlign]}`}>
+      <Container maxWidth="6xl" className={textAlignClass[data.textAlign]}>
         <h1 className={`${montserrat.className} text-4xl md:text-5xl font-bold mb-6`}>
           {data.title}
         </h1>
@@ -77,7 +78,7 @@ export function HeroBanner({ data }: HeroBannerProps) {
             ))}
           </div>
         )}
-      </div>
+      </Container>
     </section>
   );
 }

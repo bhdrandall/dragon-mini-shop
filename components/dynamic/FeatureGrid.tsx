@@ -1,6 +1,7 @@
 import React from 'react';
 import { FeatureGridData } from '@/lib/component-types';
 import { FeatureCard } from './FeatureCard';
+import { Container } from './Container';
 
 interface FeatureGridProps {
   data: FeatureGridData;
@@ -16,7 +17,7 @@ export function FeatureGrid({ data }: FeatureGridProps) {
 
   return (
     <section className="py-16 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4">
+      <Container maxWidth="6xl">
         {(data.title || data.subtitle) && (
           <div className="text-center mb-12">
             {data.title && (
@@ -36,7 +37,7 @@ export function FeatureGrid({ data }: FeatureGridProps) {
             <FeatureCard key={index} data={card} />
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

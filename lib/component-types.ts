@@ -167,6 +167,22 @@ export interface BreadcrumbData extends BaseComponentData {
   }[];
 }
 
+// Reviews Components
+export interface ReviewData {
+  customerName: string;
+  rating: number; // 1-5 stars
+  comment: string;
+  avatarUrl?: string;
+  productName?: string;
+}
+
+export interface ReviewsData extends BaseComponentData {
+  type: 'reviews';
+  title?: string;
+  subtitle?: string;
+  reviews: ReviewData[];
+}
+
 // Union type for all component data
 export type ComponentData = 
   | HeroBannerData
@@ -183,7 +199,8 @@ export type ComponentData =
   | FAQSectionData
   | ContactFormData
   | BlogPostListData
-  | BreadcrumbData;
+  | BreadcrumbData
+  | ReviewsData;
 
 // Section types
 export interface SectionData {
@@ -220,7 +237,8 @@ export const COMPONENT_TYPES = {
   'faq-section': 'FAQ Section',
   'contact-form': 'Contact Form',
   'blog-post-list': 'Blog Post List',
-  'breadcrumb': 'Breadcrumb Navigation'
+  'breadcrumb': 'Breadcrumb Navigation',
+  'reviews': 'Customer Reviews'
 } as const;
 
 export const SECTION_TYPES = {

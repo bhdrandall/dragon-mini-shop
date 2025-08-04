@@ -1,5 +1,6 @@
 import React from 'react';
 import { GalleryData } from '@/lib/component-types';
+import { Container } from './Container';
 
 interface GalleryProps {
   data: GalleryData;
@@ -20,7 +21,7 @@ export function Gallery({ data }: GalleryProps) {
 
   return (
     <div className="py-12">
-      <div className="container mx-auto px-4">
+      <Container maxWidth="6xl">
         {data.title && (
           <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
             {data.title}
@@ -44,7 +45,7 @@ export function Gallery({ data }: GalleryProps) {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

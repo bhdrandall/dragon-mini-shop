@@ -1,5 +1,6 @@
 import React from 'react';
 import { TextBlockData } from '@/lib/component-types';
+import { Container } from './Container';
 
 interface TextBlockProps {
   data: TextBlockData;
@@ -19,14 +20,14 @@ export function TextBlock({ data }: TextBlockProps) {
   };
 
   return (
-    <div className="py-8">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <Container maxWidth="6xl">
         <div 
-          className={`prose prose-lg dark:prose-invert mx-auto ${textAlignClass[data.textAlign]}`}
+          className={`prose prose-lg dark:prose-invert prose-indigo mx-auto ${textAlignClass[data.textAlign]}`}
           style={containerStyle}
           dangerouslySetInnerHTML={{ __html: data.content }}
         />
-      </div>
-    </div>
+      </Container>
+    </section>
   );
 }

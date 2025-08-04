@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageBlockData } from '@/lib/component-types';
+import { Container } from './Container';
 
 interface ImageBlockProps {
   data: ImageBlockData;
@@ -19,8 +20,8 @@ export function ImageBlock({ data }: ImageBlockProps) {
   };
 
   return (
-    <div className="py-8">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-white dark:bg-gray-900">
+      <Container maxWidth="6xl">
         <div className={`flex ${alignmentClass[data.alignment]}`}>
           <div className="max-w-full">
             <img
@@ -36,7 +37,7 @@ export function ImageBlock({ data }: ImageBlockProps) {
             )}
           </div>
         </div>
-      </div>
-    </div>
+      </Container>
+    </section>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ProductGridData } from '@/lib/component-types';
+import { Container } from './Container';
 import { ProductCard } from './ProductCard';
 
 interface ProductGridProps {
@@ -19,7 +20,7 @@ export function ProductGrid({ products, title, columns = 3, showFilters = false 
 
   return (
     <div className="py-12">
-      <div className="container mx-auto px-4">
+      <Container maxWidth="6xl">
         {title && (
           <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
             {title}
@@ -44,7 +45,7 @@ export function ProductGrid({ products, title, columns = 3, showFilters = false 
             <div className="col-span-full text-center text-gray-500">No products found.</div>
           )}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

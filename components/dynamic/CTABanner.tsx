@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { CTABannerData, ButtonData } from '@/lib/component-types';
+import { Container } from './Container';
 
 interface CTABannerProps {
   data: CTABannerData;
@@ -37,7 +38,7 @@ export function CTABanner({ data }: CTABannerProps) {
 
   return (
     <section className="py-16" style={bannerStyle}>
-      <div className="container mx-auto px-4 text-center">
+      <Container maxWidth="6xl" className="text-center">
         <h2 className="text-3xl font-bold mb-4">
           {data.title}
         </h2>
@@ -51,7 +52,7 @@ export function CTABanner({ data }: CTABannerProps) {
             <Button key={index} button={button} />
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

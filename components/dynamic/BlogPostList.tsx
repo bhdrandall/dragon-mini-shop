@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { BlogPostListData } from '@/lib/component-types';
+import { Container } from './Container';
 
 interface BlogPostListProps {
   data: BlogPostListData;
@@ -19,7 +20,7 @@ export function BlogPostList({ data }: BlogPostListProps) {
 
   return (
     <div className="py-12">
-      <div className="container mx-auto px-4">
+      <Container maxWidth="6xl">
         {data.title && (
           <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
             {data.title}
@@ -61,7 +62,7 @@ export function BlogPostList({ data }: BlogPostListProps) {
             </article>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

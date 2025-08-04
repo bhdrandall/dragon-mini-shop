@@ -15,6 +15,7 @@ import { FAQSection } from './FAQSection';
 import { ContactForm } from './ContactForm';
 import { BlogPostList } from './BlogPostList';
 import { Breadcrumb } from './Breadcrumb';
+import { Reviews } from './Reviews';
 
 interface ComponentRendererProps {
   component: ComponentData;
@@ -56,6 +57,8 @@ export function ComponentRenderer({ component }: ComponentRendererProps) {
       return <BlogPostList data={component} />;
     case 'breadcrumb':
       return <Breadcrumb data={component} />;
+    case 'reviews':
+      return <Reviews data={component} />;
     default:
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       console.warn(`Unknown component type: ${(component as any).type}`);

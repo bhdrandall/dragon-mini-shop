@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { ContactFormData } from '@/lib/component-types';
+import { Container } from './Container';
 
 interface ContactFormProps {
   data: ContactFormData;
@@ -10,7 +11,7 @@ export function ContactForm({ data }: ContactFormProps) {
   // Netlify Forms: no JS submit logic, just native form submit
   return (
     <div className="py-12">
-      <div className="container mx-auto px-4 max-w-2xl">
+      <Container maxWidth="6xl">
         {data.title && (
           <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
             {data.title}
@@ -73,7 +74,7 @@ export function ContactForm({ data }: ContactFormProps) {
             {data.submitText}
           </button>
         </form>
-      </div>
+      </Container>
     </div>
   );
 }

@@ -147,21 +147,74 @@ export const seedPages: Omit<PageData, 'id'>[] = [
             type: 'image-text',
             order: 1,
             isVisible: true,
-            imageUrl: '/api/placeholder/400/400',
+            imageUrl: '/api/placeholder/500/400',
             alt: 'Dragon Miniatures Workshop',
             title: 'Our Mission',
-            content: '<p>At Dragon Miniatures, we believe that every tabletop adventure deserves the highest quality miniatures and terrain. Founded by passionate gamers and makers, we combine cutting-edge 3D printing technology with artistic craftsmanship to bring your imagination to life.</p><p>Whether you\'re a dungeon master looking to surprise your players with a custom dragon, or a painter seeking the perfect miniature for your collection, we\'re here to make your tabletop dreams a reality.</p>',
+            content: '<p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300">At Dragon Miniatures, we believe that every tabletop adventure deserves the highest quality miniatures and terrain. Founded by passionate gamers and makers, we combine cutting-edge 3D printing technology with artistic craftsmanship to bring your imagination to life.</p><p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mt-4">Whether you\'re a dungeon master looking to surprise your players with a custom dragon, or a painter seeking the perfect miniature for your collection, we\'re here to make your tabletop dreams a reality.</p>',
             layout: 'image-left',
-            imageWidth: '400px'
+            imageWidth: '500px'
           },
           {
             id: 'values-section',
             type: 'text-block',
             order: 2,
             isVisible: true,
-            content: '<h2>Our Values</h2><ul><li><strong>Quality First:</strong> Every miniature is printed with precision and attention to detail</li><li><strong>Customer Focus:</strong> Your satisfaction is our top priority</li><li><strong>Innovation:</strong> We constantly explore new techniques and materials</li><li><strong>Community:</strong> We\'re gamers too, and we understand what you need</li></ul>',
-            textAlign: 'left',
-            maxWidth: '800px'
+            content: '<h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Our Values</h2><div class="grid md:grid-cols-2 gap-8"><div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg"><h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">Quality First</h3><p class="text-gray-700 dark:text-gray-300">Every miniature is printed with precision and attention to detail, ensuring the highest quality results for your tabletop adventures.</p></div><div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg"><h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">Customer Focus</h3><p class="text-gray-700 dark:text-gray-300">Your satisfaction is our top priority. We work closely with you to ensure your vision becomes reality.</p></div><div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg"><h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">Innovation</h3><p class="text-gray-700 dark:text-gray-300">We constantly explore new techniques and materials to deliver cutting-edge results for your miniatures.</p></div><div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg"><h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3">Community</h3><p class="text-gray-700 dark:text-gray-300">We\'re gamers too, and we understand what you need. We\'re part of the same community you love.</p></div></div>',
+            textAlign: 'center'
+          }
+        ]
+      },
+      {
+        id: 'about-reviews',
+        type: 'content',
+        order: 3,
+        isVisible: true,
+        components: [
+          {
+            id: 'customer-reviews',
+            type: 'reviews',
+            order: 1,
+            isVisible: true,
+            title: 'What Our Customers Say',
+            subtitle: 'Don\'t just take our word for it - hear from our satisfied customers',
+            reviews: [
+              {
+                customerName: 'Sarah M.',
+                rating: 5,
+                comment: 'The custom dragon I ordered was absolutely stunning! The detail is incredible and it printed perfectly. My D&D group was blown away when I revealed it.',
+                productName: 'Custom Dragon Miniature'
+              },
+              {
+                customerName: 'Mike R.',
+                rating: 5,
+                comment: 'Fast shipping and excellent quality. The terrain pieces I bought look amazing on my table and the resin quality is top-notch.',
+                productName: 'Dungeon Terrain Set'
+              },
+              {
+                customerName: 'Alex K.',
+                rating: 5,
+                comment: 'I had a specific character design in mind and they nailed it perfectly. The communication throughout the process was great and the final result exceeded my expectations.',
+                productName: 'Custom Character Design'
+              },
+              {
+                customerName: 'Jennifer L.',
+                rating: 5,
+                comment: 'Ordered a set of hero miniatures and they arrived quickly and in perfect condition. The detail level is amazing and they paint beautifully.',
+                productName: 'Hero Party Pack'
+              },
+              {
+                customerName: 'David T.',
+                rating: 5,
+                comment: 'As a DM, having high-quality miniatures makes all the difference. Dragon Miniatures has become my go-to for all my tabletop needs.',
+                productName: 'Ancient Dragon Miniature'
+              },
+              {
+                customerName: 'Emma W.',
+                rating: 5,
+                comment: 'The customer service is outstanding and the quality of their prints is consistently excellent. Highly recommend for any tabletop gamer!',
+                productName: 'Custom Terrain Piece'
+              }
+            ]
           }
         ]
       }

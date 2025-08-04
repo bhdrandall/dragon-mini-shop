@@ -8,7 +8,6 @@ interface FeatureCardProps {
 
 export function FeatureCard({ data }: FeatureCardProps) {
   const cardStyle = {
-    backgroundColor: data.backgroundColor || undefined,
     color: data.textColor || undefined
   };
 
