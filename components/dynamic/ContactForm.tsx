@@ -20,6 +20,7 @@ export function ContactForm({ data }: ContactFormProps) {
         <form
           name="contact"
           method="POST"
+          action="/contact-success"
           data-netlify="true"
           netlify-honeypot="bot-field"
           className="space-y-6"
