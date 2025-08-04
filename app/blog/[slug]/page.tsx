@@ -5,9 +5,7 @@ import Link from "next/link";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
-interface BlogPostPageProps {
-  params: { slug: string };
-}
+
 
 export async function generateStaticParams() {
   const posts = await prisma.blogPost.findMany({
@@ -17,7 +15,7 @@ export async function generateStaticParams() {
   return posts.map(post => ({ slug: post.slug }));
 }
 
-export default async function BlogPostPage(props: BlogPostPageProps) {
+export default async function BlogPostPage(props: any) {
   const { params } = await props;
   const post = await prisma.blogPost.findUnique({
     where: { slug: params.slug },
