@@ -28,7 +28,8 @@ export class PageService {
       title: page.title,
       description: page.description,
       isPublished: page.isPublished,
-      sections: page.sections.map(section => ({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      sections: page.sections.map((section: any) => ({
         id: section.id,
         type: section.type as any,
         order: section.order,
@@ -63,13 +64,15 @@ export class PageService {
       orderBy: { updatedAt: 'desc' }
     });
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return pages.map((page: any) => ({
       id: page.id,
       slug: page.slug,
       title: page.title,
       description: page.description,
       isPublished: page.isPublished,
-      sections: page.sections.map(section => ({
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      sections: page.sections.map((section: any) => ({
         id: section.id,
         type: section.type as any,
         order: section.order,
