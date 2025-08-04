@@ -6,9 +6,9 @@ interface ProductCardProps {
   product: {
     id: string;
     name: string;
-    description?: string;
+    description?: string | null;
     price: number;
-    imageUrl?: string;
+    imageUrl?: string | null;
   };
 }
 
