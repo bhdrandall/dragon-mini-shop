@@ -1,4 +1,5 @@
 import { Montserrat } from "next/font/google";
+import Link from "next/link";
 import { FaUpload, FaRuler, FaPalette, FaDollarSign, FaClock, FaCheck } from "react-icons/fa";
 import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();

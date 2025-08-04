@@ -7,9 +7,9 @@ import { ProductCard } from '@/components/dynamic/ProductCard';
 type Product = {
   id: string;
   name: string;
-  description?: string;
+  description?: string | null;
   price: number;
-  imageUrl?: string;
+  imageUrl?: string | null;
 };
 
 type Type = { category: string };
