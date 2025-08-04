@@ -1,3 +1,6 @@
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+
 import { Montserrat } from "next/font/google";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaDiscord, FaInstagram, FaTwitter } from "react-icons/fa";
 

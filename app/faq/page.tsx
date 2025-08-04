@@ -1,3 +1,6 @@
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+
 import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });

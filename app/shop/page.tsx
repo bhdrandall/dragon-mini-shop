@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Montserrat } from "next/font/google";
-import { prisma } from '@/lib/db';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 import { ProductCard } from '@/components/dynamic/ProductCard';
 
 type Product = {

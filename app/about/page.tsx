@@ -1,9 +1,10 @@
-import { PageService } from '@/lib/page-service';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 import { PageRenderer } from '@/components/dynamic/PageRenderer';
 import { notFound } from 'next/navigation';
 
 export default async function About() {
-  const pageData = await PageService.getPageBySlug('about');
+  const pageData = await prisma.page.findFirst({ where: { slug: 'about' } });
   
   if (!pageData) {
     notFound();

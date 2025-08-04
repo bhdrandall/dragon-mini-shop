@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
-import { prisma } from '@/lib/db';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 
 
 

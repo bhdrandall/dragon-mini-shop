@@ -1,6 +1,7 @@
 import { Montserrat } from "next/font/google";
 import { FaUpload, FaRuler, FaPalette, FaDollarSign, FaClock, FaCheck } from "react-icons/fa";
-import Link from 'next/link';
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
