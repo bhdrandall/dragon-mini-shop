@@ -46,39 +46,71 @@ async function main() {
 
   // Seed sample products
   const sampleProducts = [
-    {
-      name: 'Ancient Dragon Miniature',
-      description: 'Highly detailed ancient red dragon perfect for boss encounters',
-      price: 29.99,
-      category: 'miniatures',
-      imageUrl: '/api/placeholder/300/300',
-      isAvailable: true
-    },
-    {
-      name: 'Dungeon Terrain Set',
-      description: 'Complete dungeon terrain set with walls, doors, and accessories',
-      price: 49.99,
-      category: 'terrain',
-      imageUrl: '/api/placeholder/300/300',
-      isAvailable: true
-    },
-    {
-      name: 'Hero Party Pack',
-      description: 'Set of 4 customizable hero miniatures',
-      price: 19.99,
-      category: 'miniatures',
-      imageUrl: '/api/placeholder/300/300',
-      isAvailable: true
-    },
-    {
-      name: 'Custom Character Design',
-      description: 'Fully custom miniature designed from your specifications',
-      price: 79.99,
-      category: 'custom',
-      imageUrl: '/api/placeholder/300/300',
-      isAvailable: true
-    }
-  ];
+  {
+    name: 'Beholder',
+    description: 'A detailed Beholder miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Beholder.jpg',
+    isAvailable: true
+  },
+  {
+    name: 'Black Slaad',
+    description: 'A detailed Black Slaad miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Black-Slaad.jpg',
+    isAvailable: true
+  },
+  {
+    name: 'Demon Batty',
+    description: 'A detailed Demon Batty miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Demon-Batty.jpg',
+    isAvailable: true
+  },
+  {
+    name: 'Demon',
+    description: 'A detailed Demon miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Demon.jpg',
+    isAvailable: true
+  },
+  {
+    name: 'Hydra',
+    description: 'A detailed Hydra miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Hydra.jpg',
+    isAvailable: true
+  },
+  {
+    name: 'Mimic Left',
+    description: 'A detailed Mimic Left miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Mimic-Left.jpg',
+    isAvailable: true
+  },
+  {
+    name: 'Mimic Right',
+    description: 'A detailed Mimic Right miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Mimic-Right.jpg',
+    isAvailable: true
+  },
+  {
+    name: 'Slaads',
+    description: 'A detailed Slaads miniature.',
+    price: 24.99,
+    category: 'miniatures',
+    imageUrl: 'https://cdn.jsdelivr.net/gh/bhdrandall/cdn-assets@main/Dragon-Mini-Shop-Photos/Slaads.jpg',
+    isAvailable: true
+  }
+];
 
   for (const productData of sampleProducts) {
     const product = await prisma.product.create({ data: productData });
