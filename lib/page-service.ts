@@ -31,9 +31,11 @@ export class PageService {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       sections: page.sections.map((section: any) => ({
         id: section.id,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         type: section.type as any,
         order: section.order,
         isVisible: section.isVisible,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         components: section.components.map((component: any) => ({
           ...component.data as ComponentData,
           id: component.id,
@@ -74,9 +76,11 @@ export class PageService {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       sections: page.sections.map((section: any) => ({
         id: section.id,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         type: section.type as any,
         order: section.order,
         isVisible: section.isVisible,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         components: section.components.map((component: any) => ({
           ...component.data as ComponentData,
           id: component.id,
