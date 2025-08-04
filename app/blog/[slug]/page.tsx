@@ -15,6 +15,7 @@ export async function generateStaticParams() {
   return posts.map(post => ({ slug: post.slug }));
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function BlogPostPage(props: any) {
   const { params } = await props;
   const post = await prisma.blogPost.findUnique({
