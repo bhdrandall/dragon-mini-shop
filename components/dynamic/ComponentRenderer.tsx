@@ -57,7 +57,8 @@ export function ComponentRenderer({ component }: ComponentRendererProps) {
     case 'breadcrumb':
       return <Breadcrumb data={component} />;
     default:
-      console.warn(`Unknown component type: ${component.type}`);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      console.warn(`Unknown component type: ${(component as any).type}`);
       return null;
   }
 }
