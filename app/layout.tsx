@@ -4,7 +4,8 @@ import './globals.css';
 import { ThemeProvider } from './providers';
 import ThemeToggle from "@/components/ThemeToggle";
 import SkipToContent from "@/components/SkipToContent";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -128,28 +129,28 @@ export default function RootLayout({
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Shop</h3>
                   <ul className="space-y-2">
-                    <li><a href="/shop/miniatures" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Miniatures</a></li>
-                    <li><a href="/shop/terrain" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Terrain</a></li>
-                    <li><a href="/shop/warhammer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Warhammer</a></li>
-                    <li><a href="/shop/bundles" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Bundles</a></li>
+                    <li><Link href="/shop/miniatures" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Miniatures</Link></li>
+                    <li><Link href="/shop/terrain" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Terrain</Link></li>
+                    <li><Link href="/shop/warhammer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Warhammer</Link></li>
+                    <li><Link href="/shop/bundles" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Bundles</Link></li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Support</h3>
                   <ul className="space-y-2">
-                    <li><a href="/faq" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">FAQs</a></li>
-                    <li><a href="/shipping" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Shipping & Returns</a></li>
-                    <li><a href="/privacy" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
-                    <li><a href="/terms" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Terms of Service</a></li>
+                    <li><Link href="/faq" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">FAQs</Link></li>
+                    <li><Link href="/shipping" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Shipping & Returns</Link></li>
+                    <li><Link href="/privacy" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Privacy Policy</Link></li>
+                    <li><Link href="/terms" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Terms of Service</Link></li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Company</h3>
                   <ul className="space-y-2">
-                    <li><a href="/about" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About Us</a></li>
-                    <li><a href="/blog" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Blog</a></li>
-                    <li><a href="/custom-orders" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Custom Orders</a></li>
-                    <li><a href="/contact" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact Us</a></li>
+                    <li><Link href="/about" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">About Us</Link></li>
+                    <li><Link href="/blog" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Blog</Link></li>
+                    <li><Link href="/custom-orders" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Custom Orders</Link></li>
+                    <li><Link href="/contact" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact Us</Link></li>
                   </ul>
                 </div>
                 <div>

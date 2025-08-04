@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google";
 import { FaUpload, FaRuler, FaPalette, FaDollarSign, FaClock, FaCheck } from "react-icons/fa";
+import Link from 'next/link';
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
@@ -208,7 +209,7 @@ export default function CustomOrdersPage() {
                   </div>
                   <div className="ml-3 text-sm">
                     <label htmlFor="terms" className="font-medium text-gray-700 dark:text-gray-300">
-                      I agree to the <a href="/terms" className="text-indigo-600 hover:text-indigo-500">Terms of Service</a> and <a href="/privacy" className="text-indigo-600 hover:text-indigo-500">Privacy Policy</a>
+                      I agree to the <Link href="/terms" className="text-indigo-600 hover:text-indigo-500">Terms of Service</Link> and <Link href="/privacy" className="text-indigo-600 hover:text-indigo-500">Privacy Policy</Link>
                     </label>
                   </div>
                 </div>
