@@ -9,10 +9,10 @@ const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
 export async function generateStaticParams() {
   const posts = await prisma.blogPost.findMany({
-    where: { isPublished: true },
-    select: { slug: true },
+    where: { isPublished: true }
   });
-  return posts.map(post => ({ slug: post.slug }));
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return posts.map((post: any) => ({ slug: post.slug }));
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
