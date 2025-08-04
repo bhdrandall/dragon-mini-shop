@@ -19,13 +19,7 @@ export async function generateStaticParams() {
 export default async function BlogPostPage(props: any) {
   const { params } = await props;
   const post = await prisma.blogPost.findUnique({
-    where: { slug: params.slug },
-    select: {
-      title: true,
-      content: true,
-      createdAt: true,
-      excerpt: true,
-    },
+    where: { slug: params.slug }
   });
 
   if (!post) return notFound();
