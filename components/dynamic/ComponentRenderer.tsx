@@ -44,7 +44,8 @@ export function ComponentRenderer({ component }: ComponentRendererProps) {
       // @ts-expect-error: Async Server Component
       return <ProductCardAsync data={component} />;
     case 'product-grid':
-      return <ProductGrid data={component} />;
+      // @ts-expect-error: Async Server Component
+      return <ProductGridAsync data={component} />;
     case 'faq-item':
       return <FAQItem data={component} />;
     case 'faq-section':
