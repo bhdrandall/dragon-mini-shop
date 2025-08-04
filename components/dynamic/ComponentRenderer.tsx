@@ -41,7 +41,7 @@ export function ComponentRenderer({ component }: ComponentRendererProps) {
     case 'gallery':
       return <Gallery data={component} />;
     case 'product-card':
-      return <ProductCard data={component} />;
+      return <ProductCard product={component} />;
     case 'product-grid':
       return <ProductGrid data={component} />;
     case 'faq-item':
