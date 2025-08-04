@@ -1,18 +1,19 @@
 import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
 
-interface ProductPageProps {
-  params: { id: string };
-}
+
 
 export async function generateStaticParams() {
   const products = await prisma.product.findMany({
     select: { id: true }
   });
-  return products.map(product => ({ id: product.id }));
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return products.map((product: any) => ({ id: product.id }));
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function ProductPage(props: any) {
+  const { params } = await props;
   const { id } = params;
   const product = await prisma.product.findUnique({
     where: { id },
