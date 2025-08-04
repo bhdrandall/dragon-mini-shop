@@ -2,9 +2,7 @@ import { notFound } from 'next/navigation';
 import { prisma } from '@/lib/db';
 import { ProductGrid } from '@/components/dynamic/ProductGrid';
 
-interface CategoryPageProps {
-  params: { category: string };
-}
+
 
 export async function generateStaticParams() {
   // Fetch all unique miniature categories from the database
@@ -13,10 +11,13 @@ export async function generateStaticParams() {
     select: { category: true },
     distinct: ['category'],
   });
-  return categories.map((cat) => ({ category: cat.category }));
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return categories.map((cat: any) => ({ category: cat.category }));
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function CategoryPage(props: any) {
+  const { params } = await props;
   const { category } = params;
   // Fetch all products in this miniature category
   const products = await prisma.product.findMany({
