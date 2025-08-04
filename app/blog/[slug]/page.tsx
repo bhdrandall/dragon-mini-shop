@@ -1,6 +1,7 @@
 import { prisma } from '@/lib/db';
 import { notFound } from 'next/navigation';
 import { Montserrat } from "next/font/google";
+import Link from "next/link";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["700"] });
 
@@ -45,12 +46,12 @@ export default async function BlogPostPage(props: BlogPostPageProps) {
         <div className="max-w-3xl prose dark:prose-invert">
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
           <div className="mt-12">
-            <a
+            <Link
               href="/blog"
               className="inline-flex items-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow transition-colors"
             >
               <span className="mr-2">←</span> Back to Blog
-            </a>
+            </Link>
           </div>
         </div>
       </section>
