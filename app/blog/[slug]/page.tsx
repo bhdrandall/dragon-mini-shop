@@ -16,7 +16,8 @@ export async function generateStaticParams() {
   return posts.map(post => ({ slug: post.slug }));
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage(props: BlogPostPageProps) {
+  const { params } = await props;
   const post = await prisma.blogPost.findUnique({
     where: { slug: params.slug },
     select: {
